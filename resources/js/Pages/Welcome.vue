@@ -12,27 +12,30 @@ defineProps({
 <template>
     <Head title="Welcome" />
 
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0 bg-hero-bg">
-        <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-            <Link v-if="$page.props.auth.user" :href="route('dashboard')" class="text-sm text-gray-700 underline">
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 items-start  xl:items-center sm:pt-0 bg-hero-bg">
+        <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block space-x-3">
+            <Link v-if="$page.props.auth.user" :href="route('dashboard')" class="text-sm text-stone-500 hover:text-stone-400 active:text-stone-300 underline pr-2">
                 Dashboard
             </Link>
-            <Link v-if="$page.props.auth.user" :href="route('about')" class="text-sm text-gray-700 underline">
+            <Link v-if="$page.props.auth.user" :href="route('about')" class="text-sm text-stone-500 hover:text-stone-400 active:text-stone-300 underline pr-2">
                 About
+            </Link>
+            <Link v-if="$page.props.auth.user" :href="route('contacts')" class="text-sm text-stone-500 hover:text-stone-400 active:text-stone-300 underline pr-2">
+                Contacts
             </Link>
 
             <template v-else>
-                <Link :href="route('login')" class="text-sm text-gray-100 underline">
+                <Link :href="route('login')" class="text-sm text-stone-400 hover:text-stone-300 underline pr-2">
                     Log in
                 </Link>
 
-                <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-gray-1000 underline">
+                <Link v-if="canRegister" :href="route('register')" class="text-sm text-stone-400 hover:text-stone-300 underline pr-2">
                     Register
                 </Link>
             </template>
         </div>
-        <h1 style="text-align: right; color: burlywood;">
-            Great site by <strong>XeniaWeb</strong>will be here soon  <br> <br>xenia1898@gmail.com
+        <h1 class="my-14 p-5 text-[burlywood] xl:text-right text-left rounded-xl text-2xl mr-[5%] ml-auto backdrop-blur backdrop-opacity-60">
+            Great site by <strong>XeniaWeb</strong> will be here soon  <br> <br>xenia1898@gmail.com
         </h1>
 
     </div>

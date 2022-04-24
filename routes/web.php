@@ -25,6 +25,7 @@ Route::get('/', function () {
 });
 
 Route::inertia('/about', 'About')->name('about');
+Route::inertia('/contacts', 'Contacts')->name('contacts');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
