@@ -13,6 +13,11 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                'hero-bg': "url('../assets/images/switz08.webp')",
+                // 'hero-pattern': "url('/img/hero-pattern.svg')",
+                // 'footer-texture': "url('/img/footer-texture.png')",
+            },
         },
     },
 
