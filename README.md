@@ -6,7 +6,7 @@
 
 ### About this project
 
-Laravel 9 FullStack App
+XeniaWeb Blog - Laravel 9 Inertiajs Vue.js Tailwind Fullstack App
 
 [comment]: <> (- [Simple, fast routing engine]&#40;https://laravel.com/docs/routing&#41;.)
 
