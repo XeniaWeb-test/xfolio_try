@@ -8,6 +8,7 @@ defineProps({
     },
 });
 </script>
+
 <template>
     <svg viewBox="0 0 180 80" xmlns="http://www.w3.org/2000/svg">
         <g>
@@ -32,5 +33,4 @@ defineProps({
     c-15-18-26.8,12-7.1,16.6l0.5,6.1C147.3,78,139.5,70.6,138.3,61.5z"/>
         </g>
     </svg>
-
 </template>

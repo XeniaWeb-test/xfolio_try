@@ -7,3 +7,4 @@ import { Link } from '@inertiajs/inertia-vue3';
         <slot />
     </Link>
 </template>
+

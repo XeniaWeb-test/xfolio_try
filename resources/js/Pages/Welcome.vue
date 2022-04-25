@@ -16,7 +16,7 @@ defineProps({
 
         <nav class="relative flex justify-between p-4">
             <div class="shrink-0 flex items-center px-5 py-2">
-                <Link :href="route('welcome')">
+                <Link :href="route('works.index')">
                     <AppLogoXeniaWeb color-web="#44403c" color-xenia="burlywood" class="w-25 h-10"/>
                 </Link>
             </div>
@@ -48,7 +48,7 @@ defineProps({
 <style scoped>
 
 .min-h-hero {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 110px);
 }
 .bg-gray-100 {
     background-color: #f7fafc;

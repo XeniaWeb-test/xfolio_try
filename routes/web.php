@@ -24,8 +24,9 @@ Route::get('/', function () {
     ]);
 })->name('welcome');
 
-Route::inertia('/about', 'About')->name('about');
-Route::inertia('/contacts', 'Contacts')->name('contacts');
+Route::inertia('/about', 'About')->name('page.about');
+Route::inertia('/contacts', 'Contacts')->name('page.contacts');
+Route::resource('/works', \App\Http\Controllers\WorkController::class);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

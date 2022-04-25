@@ -20,6 +20,7 @@ mix.js('resources/js/app.js', 'public/js')
     ])
     .alias({
         '@': 'resources/js',
+        '@@': 'resources/assets/images',
     })
     .version();
 

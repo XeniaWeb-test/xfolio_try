@@ -1,38 +1,30 @@
 <script setup>
 import XenBaseLayout from '@/Layouts/Base.vue';
-import { Head } from '@inertiajs/inertia-vue3';
+import { Head, Link } from '@inertiajs/inertia-vue3';
+
+defineProps({
+
+});
 </script>
 
 <template>
-    <Head title="About" ></Head>
+    <Head title="Works" />
 
     <XenBaseLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                About me
+                List of Works
             </h2>
         </template>
 
         <div class="sm:py-4 xl:py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="sm:flex  bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <img src="@@/1.jpg" alt="Photo" class="w-full sm:w-1/2 xl:w-1/3 lg:w-1/4">
                     <div class="p-6 bg-white border-b border-gray-200">
-                        About - text new 1
+                        What I Do
                     </div>
                 </div>
             </div>
         </div>
     </XenBaseLayout>
 </template>
-
-<style scoped>
-.bg-wh {
-    background-color: #9aeaaa;
-}
-
-.bg-w1 {
-    background-image: url('@@/work1.jpg');
-    background-size: cover;
-}
-</style>

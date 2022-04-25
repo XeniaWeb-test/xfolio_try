@@ -1,12 +1,12 @@
 <script setup>
-import BreezeAuthenticatedLayout from '@/Layouts/Authenticated.vue';
+import XenBaseLayout from '@/Layouts/Base.vue';
 import { Head } from '@inertiajs/inertia-vue3';
 </script>
 
 <template>
     <Head title="Contacts" />
 
-    <BreezeAuthenticatedLayout>
+    <XenBaseLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 My contacts
@@ -27,5 +27,5 @@ import { Head } from '@inertiajs/inertia-vue3';
                 </div>
             </div>
         </div>
-    </BreezeAuthenticatedLayout>
+    </XenBaseLayout>
 </template>
